@@ -26,7 +26,7 @@
           <img src="./images/food.svg" alt="add food btn pic">
         </button> -->
       </div>
-      <button class="menu__add">
+      <button class="menu__add" onclick="togglePopup()">
         <img src="./images/add.svg" alt="add button">
       </button>
     </nav>
@@ -64,6 +64,32 @@
           </div>
         
        </main>
+    </div>
+    <!-- pop up -->
+    <div class="cover cover_hidden" id="add-habbit-popup">
+      <div class="popup">
+        <h2>Новая привычка</h2>
+        <div class="icon-label">Иконка</div>
+        <div class="icon-select">
+          <button class="icon icon_active">
+              <img src="./images/sport.svg" alt="sport pic">
+          </button>
+          <button class="icon">
+              <img src="./images/water.svg" alt="water pic">
+          </button>
+          <button class="icon">
+              <img src="./images/food.svg" alt="food pic">
+          </button>
+        </div>
+         <form class="popup__form">
+            <input type="text" name="name" placeholder="Название">
+            <input type="number" name="target" placeholder="Цель">
+            <button class="button" type="submit">Добавить</button>
+          </form>
+          <button class="popup__close" onclick="togglePopup()">
+            <img src="./images/close.svg" alt="close pic">
+          </button>
+      </div>
     </div>
   </div>
   <script src="./scripts/app.js"></script>
